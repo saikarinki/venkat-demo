@@ -1,0 +1,25 @@
+#%RAML 1.0
+title: kavyaapi
+version: v1
+mediaType: 
+- application/json
+protocols: [HTTP]
+
+/order:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "ordernum": "1234"
+          }
+    responses:
+      200:
+          body:
+              application/json:
+                  example:
+                      {
+                        "status": "success"
+                      }  
+        
+
